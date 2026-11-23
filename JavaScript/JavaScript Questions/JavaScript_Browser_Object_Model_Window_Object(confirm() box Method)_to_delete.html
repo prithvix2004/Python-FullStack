@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+       <meta charset="UTF-8">
+       <meta name="viewport" content="width=device-width, initial-scale=1.0">
+       <title>JavaScript Browser Object Model Window Object(confirm() box Method) to delete</title>
+</head>
+
+<body>
+       <h2>Delete item</h2>
+       <p id="item">This is an important item.</p>
+       <button onclick="deleteItem()">Delete Item</button>
+       <script>
+              function deleteItem() {
+                     //Show confirm dialogue before deleting the item
+                     let confirmation = confirm("Are you sure you want to delete this item?");
+                     if (confirmation) {
+                            //Delete the item if Ok is clicked
+                            document.getElementById("item").textContent = "This item has been deleted";
+                            alert("Item deleted succesfully..");
+                     }
+                     else {
+                            alert("Item not deleted..");
+                     }
+              }
+       </script>
+</body>
+
+</html>

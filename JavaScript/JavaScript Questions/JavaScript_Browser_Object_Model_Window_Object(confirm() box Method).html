@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+       <meta charset="UTF-8">
+       <meta name="viewport" content="width=device-width, initial-scale=1.0">
+       <title>JavaScript_Browser_Object_Model_Window_Object</title>
+</head>
+
+<body>
+       <button onclick="confirmAction()">Click Me</button>
+       <script>
+              function confirmAction() {
+                     //Display confirm dialogue
+                     let result = confirm("Are you sure to proceed?");
+
+                     //Handle the result
+                     if (result) {
+                            alert("You clicked Ok!");
+                     }
+                     else {
+                            alert("You clicked Cancel!");
+                     }
+              }
+       </script>
+</body>
+
+</html>

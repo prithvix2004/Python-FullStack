@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator (using Functions and Return)</title>
+</head>
+
+<body>
+    <script>
+        var a = parseInt(prompt("Enter a :"));
+        var b = parseInt(prompt("Enter b :"));
+        var operator = prompt("Enter operator :");
+        function sum(a, b) {
+            return a + b;
+        }
+        function sub(a, b) {
+            return a - b;
+        }
+        function mul(a, b) {
+            return a * b;
+        }
+        function div(a, b) {
+            return a / b;
+        }
+        function mod(a, b) {
+            return a % b;
+        }
+        if (operator == "+") {
+            document.writeln("Sum : ", sum(a, b));
+        }
+        else if (operator == "-") {
+            document.writeln("Subtract : ", sub(a, b));
+        }
+        else if (operator == "*") {
+            document.writeln("Multiply : ", mul(a, b));
+        }
+        else if (operator == "/") {
+            document.writeln("Divide : ", div(a, b));
+        }
+        else if (operator == "%") {
+            document.writeln("Modulus : ", mod(a, b));
+        }
+        else {
+            document.writeln("Invalid Operator..");
+        }
+    </script>
+</body>
+
+</html>

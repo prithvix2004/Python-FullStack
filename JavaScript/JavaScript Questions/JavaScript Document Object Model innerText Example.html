@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+       <meta charset="UTF-8">
+       <meta name="viewport" content="width=device-width, initial-scale=1.0">
+       <title>JavaScript Document Object Model innerText Example</title>
+</head>
+
+<body>
+       <script type="text/javascript">
+              function validate() {
+                     var msg;
+                     if (document.myForm.userPass.value.length > 5) {
+                            msg = "Good";
+                     }
+                     else {
+                            msg = "Poor";
+                     }
+                     document.getElementById('mylocation').innerText = msg;
+              }
+       </script>
+       <form name="myForm">
+              <input type="password" value="" name="userPass" onkeyup="validate()"><br>
+              Strength : <span id="mylocation">No Strength</span>
+       </form>
+</body>
+
+</html>

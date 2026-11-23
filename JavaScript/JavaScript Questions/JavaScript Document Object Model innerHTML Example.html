@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+       <meta charset="UTF-8">
+       <meta name="viewport" content="width=device-width, initial-scale=1.0">
+       <title>JavaScript Document Object Model innerHTML Example</title>
+</head>
+
+<body>
+       <script type="text/javascript">
+              function showcommentform() {
+                     var data = "Name : <input type='text' name='name'>";
+                     data += "<br>Comment : <br>";
+                     data += "<textarea rows = '5' cols = '80'></textarea>";
+                     data += "<br><input type = 'submit' value='Post Comment'>";
+                     document.getElementById('mylocation').innerHTML = data;
+              }
+       </script>
+       <form name="myform">
+              <input type="button" value="comment" onclick="showcommentform()">
+              <div id="mylocation"></div>
+       </form>
+</body>
+
+</html>

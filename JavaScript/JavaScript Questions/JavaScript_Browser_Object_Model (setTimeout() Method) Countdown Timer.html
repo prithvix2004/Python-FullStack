@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+       <meta charset="UTF-8">
+       <meta name="viewport" content="width=device-width, initial-scale=1.0">
+       <title>JavaScript_Browser_Object_Model (setTimeout() Method) Countdown Timer</title>
+</head>
+
+<body>
+       <h2>Countdown Timer Example</h2>
+       <p id="timer">5</p> <!--Initial countdown value-->
+       <button onclick="startCountdown()">Start Countdown</button>
+       <script>
+              function startCountdown() {
+                     let countdown = 5;     //Start from five seconds
+                     //Create function to update the countdown
+                     function updateTimer() {
+                            //Display current countdown value
+                            document.getElementById("timer").textContent = countdown;
+                            //Decrease countdown value
+                            countdown--;
+                            //Check countdown is complete
+                            if (countdown >= 0) {
+                                   //Call updateTimer after 1 second (1000 Milliseconds)
+                                   setTimeout(updateTimer, 1000);
+                            }
+                            else {
+                                   //Countdown is over
+                                   document.getElementById("timer").textContent = "Time's up!";
+                            }
+                     }
+                     //Start the countdown
+                     updateTimer();
+              }
+       </script>
+</body>
+
+</html>

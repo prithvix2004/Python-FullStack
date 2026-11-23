@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+       <meta charset="UTF-8">
+       <meta name="viewport" content="width=device-width, initial-scale=1.0">
+       <title>JavaScript Browser Object Model Alert and Prompt Methods</title>
+</head>
+
+<body>
+       <h1>Simple Greeting App</h1>
+       <button onclick="greetUser()">Greet Me</button>
+       <script>
+              function greetUser() {
+                     //Ask user for their name
+                     const name = prompt("What is your name?");
+
+                     //If user enters a name
+                     if (name) {
+                            alert("Hello " + name + "! Welcome to our website.");
+                     }
+                     else {
+                            alert("You didn't enter a name!!")
+                     }
+              }
+       </script>
+</body>
+
+</html>

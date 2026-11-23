@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+       <meta charset="UTF-8">
+       <meta name="viewport" content="width=device-width, initial-scale=1.0">
+       <title>JavaScript Browser Object Model (setTimeout() Method)</title>
+</head>
+
+<body>
+       <h2>setTimeout Example</h2>
+       <button onclick="showMessage()">Click to show message after three seconds..</button>
+       <p id="message"></p>
+       <script>
+              function showMessage() {
+                     //Clear existing message
+                     document.getElementById("message").textContent = "";
+                     //Use setTimeout to delay the execution by three seconds(3000 Millisecond)
+                     setTimeout(function () {
+                            document.getElementById("message").textContent = "Hello! This message appeared after a three second delay."
+                     }, 3000);     //(3000 Millisecond = 3 Seconds)
+              }
+       </script>
+</body>
+
+</html>

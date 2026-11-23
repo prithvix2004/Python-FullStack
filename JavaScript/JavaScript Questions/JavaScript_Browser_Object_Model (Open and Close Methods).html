@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+       <meta charset="UTF-8">
+       <meta name="viewport" content="width=device-width, initial-scale=1.0">
+       <title>JavaScript Browser Object Model Open Close Method</title>
+</head>
+
+<body>
+       <h2>Open and close a new window</h2>
+       <button onclick="OpenNewWindow()">Open Window</button>
+       <button onclick="CloseNewWindow()">Close Window</button>
+       <script>
+              let newWindow;       //Variable to store the new window reference
+              function OpenNewWindow() {
+                     //Open a new window
+                     newWindow = window.open("https://apriliaindia.com/", "_blank", width = 500, height = 500);
+              }
+              function CloseNewWindow() {
+                     //Check if the window exists and close it
+                     if (newWindow && !newWindow.closed) {
+                            newWindow.close();
+                     }
+                     else {
+                            alert("The window is already closed or hasn't been opened yet.");
+                     }
+              }
+       </script>
+</body>
+
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Greatest of Three Numbers</title>
+</head>
+
+<body>
+    <script>
+        var a = parseInt(prompt("Enter a number : "));
+        var b = parseInt(prompt("Enter a number : "));
+        var c = parseInt(prompt("Enter a number : "));
+        if (a > b && a > c) {
+            document.writeln(a, "is the greatest of the three numbers..");
+        }
+        else if (a < b && b > c) {
+            document.writeln(b, "is the greatest of the three numbers..");
+        }
+        else {
+            document.writeln(c, "is the greatest of the three numbers..");
+        }
+    </script>
+</body>
+
+</html>

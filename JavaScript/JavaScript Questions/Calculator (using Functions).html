@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator (using Funcitons)</title>
+</head>
+
+<body>
+    <script>
+        var a = parseInt(prompt("Enter a :"));
+        var b = parseInt(prompt("Enter b :"));
+        var operator = prompt("Enter operator :");
+        function sum(a, b) {
+            var sum = a + b;
+            document.writeln("Sum : ", sum);
+        }
+        function sub(a, b) {
+            var sub = a - b;
+            document.writeln("Sub : ", sub);
+        }
+        function mul(a, b) {
+            var mul = a * b;
+            document.writeln("Mul : ", mul);
+        }
+        function div(a, b) {
+            var div = a / b;
+            document.writeln("Div : ", div);
+        }
+        function mod(a, b) {
+            var mod = a % b;
+            document.writeln("Mod : ", mod);
+        }
+        if (operator == "+") {
+            sum(a, b);
+        }
+        else if (operator == "-") {
+            sub(a, b);
+        }
+        else if (operator == "*") {
+            mul(a, b);
+        }
+        else if (operator == "/") {
+            div(a, b);
+        }
+        else if (operator == "%") {
+            mod(a, b);
+        }
+        else {
+            document.writeln("Invalid Operator..");
+        }
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Logical Operators</title>
+</head>
+
+<body>
+    <script>
+        var a = parseInt(prompt("Enter a number : "));
+        var b = parseInt(prompt("Enter a number : "));
+        var c = parseInt(prompt("Enter a number : "));
+        var logicaland = (a == b && b == c);
+        var logicalor = (a == b || b == c);
+        var logicalnot = !(a == b);
+        document.writeln("Logical AND : ", logicaland, "<br>");
+        document.writeln("Logical OR : ", logicalor, "<br>");
+        document.writeln("Logical NOT : ", logicalnot, "<br>");
+    </script>
+</body>
+
+</html>

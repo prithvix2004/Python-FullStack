@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+       <meta charset="UTF-8">
+       <meta name="viewport" content="width=device-width, initial-scale=1.0">
+       <title>JavaScript Browser Object Model Alert and Prompt Methods (Example1)</title>
+</head>
+
+<body>
+       <h1>Simple Sum Calculator</h1>
+       <p>Click the button to calculate sum of two numbers.</p>
+       <button onclick="calculateSum()">Calculate Sum</button>
+       <script>
+              function calculateSum() {
+                     //Prompt the user for two inputs and parse them as floats
+                     const num1 = parseFloat(prompt("Enter first number : "));
+                     const num2 = parseFloat(prompt("Enter second number : "));
+
+                     //Checks if inputs are valid numbers
+                     if (isNaN(num1) || isNaN(num2)) {
+                            alert("Invalid input.. Please enter valid numbers..");
+                            return;
+                     }
+
+                     //Calculate the sum
+                     const sum = num1 + num2;
+
+                     //Display result
+                     alert("The sum of " + num1 + "and " + num2 + " is : " + sum);
+              }
+       </script>
+</body>
+
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+       <meta charset="UTF-8">
+       <meta name="viewport" content="width=device-width, initial-scale=1.0">
+       <title>Document</title>
+</head>
+
+<body>
+       <script>
+              var arr = [10, 2, 9, 6, 2, 3, 8];
+              document.writeln(arr,"<br>")
+              for (i = 0; i < arr.length; i++) {
+                     document.write(arr[i], "<br>");
+              }
+
+              document.write(arr[3], "<br>");
+              document.write(arr.length, "<br>");
+              arr.push(44);  //Inserts value in the end
+              document.write(arr, "<br>");
+              arr.unshift(75);      //Inserts value in the start
+              document.write(arr, "<br>");
+              arr.pop();     //Deletes value in the end
+              document.write(arr, "<br>");
+              arr.shift();   //Deletes value in the start
+              document.write(arr, "<br>");
+              arr[3] = 25;     //Index (Array Index starts from 0 to the end index)
+              document.write(arr, "<br>");
+       </script>
+</body>
+
+</html>

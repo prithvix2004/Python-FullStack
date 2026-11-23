@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BMI</title>
+</head>
+
+<body>
+    <script>
+        var weight = parseFloat(prompt("Enter Weight : "));
+        var heightincm = parseFloat(prompt("Enter Height : "));
+        var heightinm = heightincm / 100;
+        bmi = weight / (heightinm * heightinm);
+        document.writeln("BMI : ", bmi, "<br>");
+    </script>
+</body>
+
+</html>
