@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Age and Name (Function Parameter)</title>
+</head>
+
+<body>
+    <script>
+        var age = parseInt(prompt("Enter age :"));
+        var name = prompt("Enter b :");
+        function msg1() {
+            document.writeln("Good Morning..");
+        }
+        function msg2(name) {
+            document.writeln("Good Morning..", name);
+        }
+        function msg(age, name) {
+            document.writeln("Good Morning ", name, " of ", age, " years..");
+        }
+        if (name == "" && isNaN(age)) {
+            msg1();
+        }
+        else if (name != "" && isNaN(age)) {
+            msg2(name);
+        }
+        else if (name != "" && isNaN(age)) {
+            msg1();
+        }
+        else {
+            document.writeln("Invalid Message..")
+        }
+    </script>
+</body>
+
+</html>
