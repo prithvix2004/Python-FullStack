@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JQuery - HTML Manipulation (val() Method)</title>
+</head>
+
+<body>
+    <input type="text" id="myInput" value="Initial value">
+    <button id="changeVal">Change Value</button>
+
+    <script src="jquery-3.7.1.min.js"></script>
+
+    <script>
+        $(document).ready(function () {
+            $("#changeVal").click(function () {
+                $("#myInput").html("<em>This is new HTML content.</em>"); //Changes the value of input field.
+            });
+        });
+    </script>
+</body>
+
+</html>

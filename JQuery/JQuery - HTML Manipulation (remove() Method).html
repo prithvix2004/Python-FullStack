@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JQuery - HTML Manipulation (remove() Method)</title>
+</head>
+
+<body>
+    <p id="myPara">This is a paragraph.</p>
+    <button id="removePara">Remove Paragraph</button>
+
+    <script src="jquery-3.7.1.min.js"></script>
+
+    <script>
+        $(document).ready(function () {
+            $("#removeItem").click(function () {
+                $("#myPara").remove();  //Remove the paragraph from the page.
+            });
+        });
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JQuery - Effects (fadeToggle() Method)</title>
+</head>
+
+<body>
+    <p id="myPara">This is a paragraph.</p>
+    <button id="fadeToggleBtn">Toggle Fade</button>
+
+    <script src="jquery-3.7.1.min.js"></script>
+
+    <script>
+        $(document).ready(function () {
+            $("#fadeToggleBtn").click(function () {
+                $("#myPara").fadeToggle();  //Toggles fade effect.
+            });
+        });
+    </script>
+</body>
+
+</html>

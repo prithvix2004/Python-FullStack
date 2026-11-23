@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JQuery - Traversing (Upwards Traversing)</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="parent">
+            <p class="child">Click Me!</p>
+        </div>
+    </div>
+
+    <script src="jquery-3.7.1.min.js"></script>
+
+    <script>
+        $(document).ready(function () {
+            $(".child").click(function () {
+                //Selects the direct parent of the clicked element.
+                $(this).parent().css("background-color", "yellow");
+
+                //Selects all ancestors of the clicked element.
+                $(this).parents(".container").css("border", "2px solid red");
+
+                //Selects the closest matching ancestor.
+                $(this).closest("container").css("padding", "10px");
+            });
+        });
+    </script>
+</body>
+
+</html>

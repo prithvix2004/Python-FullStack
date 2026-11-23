@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JQuery mouseenter() and mouseleave() Events</title>
+</head>
+
+<body>
+    <div style="width: 200px; height: 100px; background-color: lightblue;">Hover over me!</div>
+
+    <script src="jquery-3.7.1.min.js"></script>
+
+    <script>
+        $(document).ready(function () {
+            $("div").mouseenter(function () {
+                $(this).css("background-color", "yellow");  //Changes backgroung color on mouse enter.
+            });
+            $("div").mouseleave(function () {
+                $(this).css("background-color", "lighblue");    //Reverts background color on mouse leave.
+            });
+        });
+    </script>
+</body>
+
+</html>

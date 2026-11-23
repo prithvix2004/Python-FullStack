@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JQuery HTML Manipulation (empty() Method)</title>
+</head>
+
+<body>
+    <div id="myDiv">
+        <p>This is inside a div.</p>
+        <p>This will be removed too.</p>
+    </div>
+    <button id="emptyDiv">Empty Div</button>
+
+    <script src="jquery-3.7.1.min.js"></script>
+
+    <script>
+        $(document).ready(function () {
+            $("#emptyDiv").click(function () {
+                $("#myDiv").empty();  //Removes all child elements inside div.
+            });
+        });
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JQuery - Effects (stop() Method)</title>
+</head>
+
+<body>
+    <div id="box" style="width: 100px; height: 100px; background-color: red;"></div>
+    <button id="startAnimate">Start Animation</button>
+    <button id="stopAnimate">Stop Animation</button>
+
+    <script src="jquery-3.7.1.min.js"></script>
+
+    <script>
+        $(document).ready(function () {
+            $("startAnimate").click(function () {
+                $("#box").animate({ left: '300px' }, 5000); //Animates the box to move right.
+            });
+            $("stopAnimate").click(function () {
+                $("#box").stop();   //Stops the animation.
+            });
+        });
+    </script>
+</body>
+
+</html>

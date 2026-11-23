@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JQuery Syntax Example</title>
+</head>
+
+<body>
+    <p>This is a paragraph.</p>
+    <p>This is another paragraph.</p>
+    <button>Click Me</button>
+
+    <script src="jquery-3.7.1.min.js"></script>
+    
+    <script>
+        //Wait for the document to be fully loaded.
+        $(document).ready(function () {
+            //Define an action when the button is clicked.
+            $("button").click(function () {
+                $("p").hide();  //Hide all <p> elements when the button is clicked.
+            });
+        });
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JQuery - Filters with Selectors</title>
+</head>
+
+<body>
+    <!--1. First Element Selector : Selects the first matched element.-->
+    <p>First paragraph</p>
+    <p>Second paragraph</p>
+
+    <script>
+        $("p:first").css("font-style", "italic");   //Italicizes only the first <p>.
+    </script>
+
+    <!--2. Last Element Selectors : Selects the last matched element.-->
+    <p>First paragraph</p>
+    <p>Second paragraph</p>
+
+    <script>
+        $("p:last").css("font-style", "italic");   //Italicizes only the last <p>.
+    </script>
+
+    <!--3. Even Elements : Selects all elements with an even index.-->
+    <p>First paragraph</p>
+    <p>Second paragraph</p>
+    <p>Third paragraph</p>
+
+    <script>
+        $("p:even").css("background-color", "lightgray");   //Changes the background of the first and third <p> (even indexes)
+    </script>
+
+    <!--4. Odd Elements : Selects all elements with an odd index.-->
+    <p>First paragraph</p>
+    <p>Second paragraph</p>
+    <p>Third paragraph</p>
+
+    <script>
+        $("p:odd").css("background-color", "lightgray");   //Changes the background of the second <p> (odd index)
+    </script>
+
+    <!--Form Selectors-->
+    <!--1. Input Selectors : Selects all form input elements.-->
+    <input type="text" name="username">
+    <input type="password" name="password">
+
+    <script>
+        $(":input").css("background-color", "lightblue");    //Changes the background of all input elements.
+    </script>
+
+    <!--2. Checkbox Selector : Selects all checkboxes.-->
+    <input type="checkbox" name="subscribe"> Subscribe
+
+    <script>
+        $(":checkbox").prop("checked", true);   //Checks all checkboxes.
+    </script>
+
+    <!--Combining Selectors-->
+    <!--1. Multiple Selectors : Selects elements that match any of the given selectors.-->
+    <p>First paragraph</p>
+    <p>Second paragraph</p>
+    <div>This is a div</div>
+
+    <script>
+        $("p, div").css("border", "1px solid black");   //Adds a border to both <p> and <div> elements.
+    </script>
+
+</body>
+
+</html>

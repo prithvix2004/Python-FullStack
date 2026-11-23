@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JQuery HTML Manipulation (attr() Method)</title>
+</head>
+
+<body>
+    <img id="myImage" src="Ducati Logo.png" alt="Placeholder Image">
+    <button id="changeAttr">Change Imgae Source</button>
+
+    <script src="jquery-3.7.1.min.js"></script>
+
+    <script>
+        $(document).ready(function () {
+            $("#changeAttr").click(function () {
+                $("#myImage").attr("src", "BMW Motorrad Logo.png")
+            });
+        });
+    </script>
+</body>
+
+</html>

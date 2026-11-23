@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JQuery Change Event</title>
+</head>
+
+<body>
+    <select id="mySelect">
+        <option value="apple">Apple</option>
+        <option value="banana">Banana</option>
+        <option value="cherry">Cherry</option>
+    </select>
+
+    <p id="selectedItem">Selected Item : None</p>
+
+    <script src="jquery-3.7.1.min.js"></script>
+
+    <script>
+        $(document).ready(function () {
+            $("#mySelect").change(function () {
+                var selectedValue = $(this).val();    //Gets the selected value.
+                $("selectedItem").text("Selected Item : " + selectedValue);   //Displays the selected item.
+            });
+        });
+    </script>
+</body>
+
+</html>

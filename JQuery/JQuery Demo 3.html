@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Syntax and Methods</title>
+</head>
+
+<body>
+    <h1>This is a heading.</h1>
+    <p>This is a paragraph.</p>
+    <button>Click Me</button>
+
+    <script src="jquery-3.7.1.min.js"></script>
+
+    <script>
+        $(document).ready(function () {
+            $("button").click(function () {
+                $("h1").css("color", "blue");   //Changes the color of <h1>.
+                $("p").text("The paragraph text has been changed.");    //Changes the text of <p>.
+                $("button").hide(); //Hides the button after clicking.
+            });
+        });
+    </script>
+</body>
+
+</html>

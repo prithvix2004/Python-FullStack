@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JQuery keydown() and keyup() Events</title>
+</head>
+
+<body>
+    <input type="text" id="textInput" placeholder="Type something..">
+    <p>Key pressed : <span id="keyInfo"></span></p>
+
+    <script src="jquery-3.7.1.min.js"></script>
+
+    <script>
+        $(document).ready(function () {
+            $("input").focus(function () {
+                $("#status").text("Status : Input is focused.");    //Updates text when input gains focus.
+            });
+            $("input").blur(function () {
+                $("#status").text("Status : No focus.");    //Updates text when input loses focus.
+            });
+        });
+    </script>
+</body>
+
+</html>

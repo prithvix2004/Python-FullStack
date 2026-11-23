@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JQuery - Traversing (Downwards Traversing)</title>
+</head>
+
+<body>
+    <div class="container">
+        <ul class="parent">
+            <li class="child">Child 1</li>
+            <li class="child">Child 2</li>
+            <li class="child">Child 3</li>
+        </ul>
+    </div>
+
+    <button id="selectChildren">Select Children</button>
+    <button id="selectDescendants">Select Descendants</button>
+
+    <script src="jquery-3.7.1.min.js"></script>
+
+    <script>
+        $(document).ready(function () {
+            $("#selectChildren").click(function () {
+                //Selects the direct children of the parent element.
+                $(".parent").children().css("color", "blue");
+            });
+
+            $("#selectDescendants").click(function () {
+                //Selects all descendants (children and grandchildren) of the container.
+                $(".container").find(".child").css("font-weight", "bold");
+            });
+        });
+    </script>
+</body>
+
+</html>

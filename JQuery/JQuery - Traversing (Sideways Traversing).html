@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JQuery - Traversing (Sideways Traversing)</title>
+</head>
+
+<body>
+    <ul>
+        <li class="item">Item 1</li>
+        <li class="item">Item 2</li>
+        <li class="item selected">Item 3 (Selected)</li>
+        <li class="item">Item 4</li>
+        <li class="item">Item 5</li>
+    </ul>
+
+    <button id="selectSiblings">Select Siblings</button>
+    <button id="selectNext">Select Next</button>
+    <button id="selectPrev">Select Previous</button>
+
+    <script src="jquery-3.7.1.min.js"></script>
+
+    <script>
+        $(document).ready(function () {
+            $("#selectSiblings").click(function () {
+                //Selects all siblings of the selected item.
+                $(".selected").siblings().css("background-color", "yellow");
+            });
+
+            $("#selectedNext").click(function () {
+                //Selects the next sibling of the selected item.
+                $(".selected").next().css("color", "blue");
+            });
+
+            $("#selectedPrev").click(function () {
+                //Selects the previous sibling of the selected item.
+                $(".selected").prev().css("font-weight", "bold");
+            });
+        });
+    </script>
+</body>
+
+</html>

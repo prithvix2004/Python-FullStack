@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JQuery Selector Example</title>
+</head>
+
+<body>
+    <h1 class="title">JQuery Selector Example</h1>
+    <p class="highlight">Second paragraph with class 'highlight'</p>
+    <p>Third paragraph</p>
+    <div>
+        <p>Paragraph inside div</p>
+    </div>
+
+    <script src="jquery-3.7.1.min.js"></script>
+
+    <script>
+        //Apply styles using JQuery Selectors
+        $("title").css("color", "red"); //Select by class
+        $("#first").css("font-weight", "bold"); //Select by ID
+        $("p:last").css("color", "blue");   //Select last paragraph
+        $("div p").css("background-color", "yellow");   //Select paragraphs inside a div
+    </script>
+</body>
+
+</html>

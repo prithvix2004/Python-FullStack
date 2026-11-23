@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JQuery - Traversing (Filtering Methods)</title>
+</head>
+
+<body>
+    <ul>
+        <li class="item">Item 1</li>
+        <li class="item">Item 2</li>
+        <li class="item">Item 3</li>
+        <li class="item">Item 4</li>
+        <li class="item">Item 5</li>
+    </ul>
+
+    <button id="filterEven">Filter Even Items</button>
+    <button id="filterFirst">Select First Item</button>
+
+    <script src="jquery-3.7.1.min.js"></script>
+
+    <script>
+        $(document).ready(function () {
+            $("#filterEven").click(function () {
+                //Selects even - indexed items.
+                $(".item").filter(".even").css("color", "red");
+            });
+
+            $("filterFirst").click(function () {
+                //Selects the first item
+                $(".item").first().css("font-weight", "bold");
+            });
+        });
+    </script>
+</body>
+
+</html>

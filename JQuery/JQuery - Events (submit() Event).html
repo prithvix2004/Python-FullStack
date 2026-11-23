@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JQuery Submit Event</title>
+</head>
+
+<body>
+    <form id="myForm">
+        <input type="text" name="username" placeholder="Enter username">
+        <button type="submit">Submit</button>
+    </form>
+    <p id="message"></p>
+
+    <script src="jquery-3.7.1.min.js"></script>
+
+    <script>
+        $(document).ready(function () {
+            $("#myForm").submit(function (event) {
+                event.preventDefault(); //Prevents form from being submitted.
+                $("#message").text("Form has been submitted..") //Displays message on form submission.
+            });
+        });
+    </script>
+</body>
+
+</html>

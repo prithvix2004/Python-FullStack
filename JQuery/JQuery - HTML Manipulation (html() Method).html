@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JQuery HTML Manipulation (html() Method)</title>
+</head>
+
+<body>
+    <p id="myPara">This is a <strong>paragraph</strong>.</p>
+    <button id="changeHtml">Change HTML</button>
+
+    <script src="jquery-3.7.1.min.js"></script>
+
+    <script>
+        $(document).ready(function () {
+            $("changeHtml").click(function () {
+                $("myPara").html("<em>This is new HTML content.</em>"); //Changes HTML inside <p>.
+            });
+        });
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JQuery - Effects (slideToggle() Method)</title>
+</head>
+
+<body>
+    <p id="myPara" style="display: none;">This is a paragraph.</p>
+    <button id="slideToggle">Toggle Slide</button>
+
+    <script src="jquery-3.7.1.min.js"></script>
+
+    <script>
+        $(document).ready(function () {
+            $("#slideToggle").click(function () {
+                $("#myPara").slideToggle();  //Toggles sliding effect.
+            });
+        });
+    </script>
+</body>
+
+</html>
