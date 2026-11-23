@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JQuery - Basic and Selectors</title>
+    <script src="jquery-3.7.1.min.js"></script>
+</head>
+
+<body>
+    <!--Basic JQuery Selectors-->
+    <!--1. Element Selectors : Selects all elements of a given type.-->
+    <p>First Paragraph</p>
+    <p>Second Paragraph</p>
+
+    <script>
+        $("p").css("color", "blue");    //Turns all <p> tags blue.
+    </script>
+
+    <!--2. ID Selectors : Selects an element by its unique id attribute.-->
+    <p id="intro">This is the intro paragraph.</p>
+
+    <script>
+        $("#intro").css("font-weight", "bold"); //Bolds the text element with id="intro".
+    </script>
+
+    <!--3. Class Selectors : Selects all elements that have a specific class.-->
+    <p class="highlight">This is a highlighted text.</p>
+    <p class="highlight">This is a also highlighted.</p>
+
+    <script>
+        $(".highlight").css("background-color", "yellow");  //Applies background color to all elements with class="highlight".
+    </script>
+
+    <!--Advanced JQuery Selectors-->
+    <!--1. Advanced Selector : Selects all elements that have a specific attribute.-->
+    <input type="text" name="username">
+    <input type="text" name="password">
+
+    <script>
+        $("[type='password']").css("border", "2px solid red");  //Adds a red border to password input fields.
+    </script>
+
+    <!--2. Child Selectors : Selects all direct child elements of a parent.-->
+    <div>
+        <p>Not selected paragraph</p>
+        <p>This paragraph will be selected</p>
+        <span>This span will be selected</span>
+    </div>
+
+    <script>
+        $("div", "p").css("color", "green");    //Selects only <p> elements that are direct children of <div>.
+    </script>
+
+    <!--3. Descendant Selectors : Selects all elements that are descendants of a specific element.-->
+    <div>
+        <span>This span will be selected</span>
+    </div>
+    <span>This span will be not be selected</span>
+
+    <script>
+        $("div span").css("color", "purple");   //Selects all <span> elements inside <div>
+    </script>
+</body>
+
+</html>
