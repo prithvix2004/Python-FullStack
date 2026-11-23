@@ -1,0 +1,329 @@
+* {
+       font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+       margin: 0;
+       padding: 0;
+}
+
+/* ----------container1---------- */
+.container1 {
+       align-items: center;
+       background-color: white;
+       display: flex;
+       justify-content: space-evenly;
+       padding: 25px;
+       position: sticky;
+       top: 0;
+       z-index: 1000;
+}
+
+.container1 nav ul {
+       display: flex;
+       gap: 30px;
+       list-style-type: none;
+}
+
+.container1 ul li a {
+       color: black;
+       text-decoration: none;
+}
+
+.container1 .logo {
+       line-height: 30px;
+       text-align: center;
+}
+
+/* --------container2-------- */
+.container2 {
+       background: url(CSS_Form_Image\(Wix\).avif);
+       background-attachment: fixed;
+       background-repeat: no-repeat;
+       background-size: cover;
+       height: 100vh;
+       justify-content: center;
+       width: 100%;
+}
+
+.container2 p {
+       font-size: large;
+       padding: 30px;
+       text-align: center;
+}
+
+.container2 h2 {
+       font-family: cursive;
+       font-size: 140px;
+       text-align: center;
+}
+
+.container2 button {
+       background-color: black;
+       border: none;
+       color: white;
+       height: 40px;
+       margin-left: 46%;
+       width: 100px;
+}
+
+.container2 button:hover {
+       background-color: white;
+       border: 2px solid black;
+       color: black;
+}
+
+/* --------container3-------- */
+.container3 {
+       display: flex;
+       height: 717px;
+}
+
+.container3 .content {
+       margin: 50px 90px 50px 250px;
+}
+
+.container3 .content hr {
+       border: 1px solid black;
+       margin-bottom: 20px;
+       width: 40px;
+}
+
+.container3 .content h1 {
+       font-size: 50px;
+}
+
+.container3 .content p {
+       font-size: 16px;
+       font-weight: 100;
+       line-height: 30px;
+       padding-top: 40px;
+       text-align: left;
+}
+
+.container3 .button {
+       display: flex;
+       gap: 18px;
+}
+
+.container3 button {
+       background-color: black;
+       border: none;
+       color: white;
+       height: 40px;
+       margin-top: 50px;
+       width: 120px;
+}
+
+.container3 button:hover {
+       background-color: white;
+       border: 2px solid black;
+       color: black;
+}
+
+.container3 #btn {
+       background-color: white;
+       border: 2px solid black;
+       color: black;
+       width: 150px;
+}
+
+.container3 #btn:hover {
+       background-color: black;
+       border: none;
+       color: white;
+}
+
+.container3 .img {
+       background-size: cover;
+       height: 700px;
+
+}
+
+/* --------container4-------- */
+.container4 {
+       background: url(ChatGPT\ Image\ Aug\ 1\,\ 2025\,\ 09_59_44\ AM.png) no-repeat;
+       background-attachment: fixed;
+       background-repeat: no-repeat;
+       background-size: cover;
+       height: 110vh;
+       justify-content: center;
+       width: 100%;
+}
+
+.container4 .border_b {
+       align-content: center;
+       display: flex;
+       gap: 50px;
+       justify-content: center;
+       margin: 90px 90px 40px;
+}
+
+.container4 .content1 {
+       margin: 0px 90px 10px 250px;
+       padding-top: 50px;
+}
+
+.container4 .content1 hr {
+       border: 1px solid black;
+       margin-bottom: 20px;
+       width: 40px;
+}
+
+.container4 .content1 h1 {
+       font-size: 50px;
+       font-style: normal;
+}
+
+.container4 .border1 {
+       border: 6px solid black;
+       font-size: 20px;
+       height: 380px;
+       position: relative;
+       width: 260px;
+}
+
+.container4 .border1 h4 {
+       padding-top: 20px;
+       text-align: center
+}
+
+.container4 .border1 h4:hover {
+       color: hsl(0, 1%, 39%);
+}
+
+.container4 .border1 p {
+       padding: 10px 0 10px 0;
+       text-align: center;
+}
+
+.container4 .border1 hr {
+       border: 1px solid black;
+       margin: 10px 0 10px 75px;
+       width: 110px;
+}
+
+.container4 .border1 button {
+       background-color: black;
+       border: none;
+       bottom: 20px;
+       color: white;
+       height: 46px;
+       left: 20px;
+       margin: 50px 0 0 50px;
+       position: absolute;
+       text-align: center;
+       width: 120px;
+}
+
+.container4 .border1 button:hover {
+       text-decoration: underline;
+}
+
+.container4 .button1 #btn2 {
+       background-color: black;
+       border: none;
+       color: white;
+       height: 40px;
+       margin: 50px 0 0 650px;
+       text-align: center;
+       width: 160px;
+}
+
+.container4 .button1 #btn2:hover {
+       background-color: white;
+       border: 2px solid black;
+       color: black;
+}
+
+
+/* ----------container5---------- */
+.container5 {
+       background-color: #57BBBF;
+       display: flex;
+}
+
+.container5 .content2 {
+       margin: 50px 90px 50px 250px;
+}
+
+.container5 .content2 hr {
+       border: 1px solid black;
+       margin-bottom: 20px;
+       width: 40px;
+}
+
+.container5 .content2 h5 {
+       font-size: 20px;
+       font-style: normal;
+}
+
+.container5 .form {
+       display: flex;
+       margin: 50px 0 0 250px;
+}
+
+.container5 .name {
+       display: flex;
+       gap: 5px;
+       margin-top: 10px;
+}
+
+.container5 input[type="text"] {
+       background-color: transparent;
+       height: 40px;
+       margin-top: 10px;
+}
+
+.container5 .name input {
+       background-color: transparent;
+       width: 200px;
+}
+
+.container5 .address {
+       display: flex;
+       gap: 25px;
+       margin-top: 10px;
+}
+
+.container5 .address input {
+       background-color: transparent;
+       height: 40px;
+       margin-top: 10px;
+       width: 418px;
+}
+
+.container5 .subject {
+       gap: 25px;
+       margin-top: 10px;
+}
+
+.container5 .subject input {
+       width: 418px;
+       height: 40px;
+       margin-top: 10px;
+}
+
+.container5 .message {
+       gap: 25px;
+       margin-top: 10px;
+}
+
+.container5 .message input {
+       width: 418px;
+       height: 40px;
+       margin-top: 10px;
+}
+
+.container5 .button2 #btn3 {
+       background-color: black;
+       border: none;
+       color: white;
+       height: 40px;
+       margin: 0 0 30px 260px;
+       text-align: center;
+       width: 160px;
+}
+
+.container5 .button2 #btn3:hover {
+       background-color: white;
+       border: 2px solid black;
+       color: black;
+}
