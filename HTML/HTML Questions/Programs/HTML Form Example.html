@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Form Example</title>
+</head>
+
+<body>
+    <form>
+        <fieldset>
+            <legend>Personal Details</legend>
+            <p>Salutation</p>
+            <select name="None" id="Salutation">
+                <option value="None">None</option>
+                <option value="Mr.">Mr.</option>
+                <option value="Mrs.">Mrs.</option>
+            </select>
+            <p>First Name : </p> <textarea> </textarea>
+            <p>Last Name : </p> <textarea> </textarea>
+            <p>Gender :
+                <input type="radio" id="Male" name="Male" value="Male">
+                <label for="Male">Male</label>
+                <input type="radio" id="Female" name="Female" value="Female">
+                <label for="Female">Female</label>
+                <label for="email">Email :</label> <br>
+            </p>
+            <input type="email" id="email" name="email">
+            <label for="Date of Birth">Date of Birth :</label>
+            <input type="date" id="Date of Birth" name="Date of Birth">
+            <p>Address :</p> <textarea> </textarea> <br>
+            <input type="submit" value="Submit">
+            <input type="reset" value="Reset">
+        </fieldset>
+    </form>
+</body>
+
+</html>
